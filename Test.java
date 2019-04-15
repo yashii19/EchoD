@@ -8,6 +8,7 @@ public class Test{
 		g.start();
 		g.gameStatus();
 		g.tourJoueur(p);
+		System.out.println()
 		m.afficherCarte();
 	}
 }

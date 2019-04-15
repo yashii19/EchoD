@@ -36,13 +36,13 @@ et une liste de la totalité des objets energetiques de ce dernier*/
 		return points;
 	}
 
-	public void setPoints(double p){
+	public void setPoints(int p){
 	/*effectue une addition sur les points du joueur*/
 		points += p;
 	}
 
 	public String getPseudo(){
-	/*renvoi le pseudo choisi par le joueur*/
+	/*renvoit le pseudo choisi par le joueur*/
 		return pseudo;
 	}
 
@@ -54,6 +54,10 @@ et une liste de la totalité des objets energetiques de ce dernier*/
 	public double getPollutionMeter(){
 	/*renvoit le niveau de pollution actuel du joueur (en %)*/
 		return pollutionMeter;
+	}
+
+	public String toString(){
+		return "A vous de jouer, joueur "+number+"\nVous avez actuellement "+points+" points et votre taux de polution est de "+pollutionMeter+" %";
 	}
 
 

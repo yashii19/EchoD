@@ -95,6 +95,10 @@ un statut indiquant si l objet est amélioré ou non et enfin d'un nom */
 	public int getPointMonth(){
 		return pointMonth;
 	}
+
+	public double getPollutionMonth(){
+		return pollutionMonth;
+	}
 }
 
 /*		do {

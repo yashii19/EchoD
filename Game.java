@@ -304,7 +304,40 @@ public class Game{
 
 	}
 
+	public Map getCarte(){
+		return carte;
+	}
 
+	public ArrayList <Player> getPlayers(){
+		return players;
+	}
 
+	public void endTurn(){
+		int gainsPts;
+		double gainsPol;
+		for(int i = 0; i<players.size(); i++){
+			gainsPol = 0.;
+			gainsPts = 0;
+			for(int j = 0; j<10; j++){
+				for (int k = 0; k<10; k++){
+					if(carte.carte[j][k].getPossession() == players.get(i).getNumber()){
+						gainsPts += carte.carte[j][k].getEnergyO().getPointMonth();
+						gainsPol += carte.carte[j][k].getEnergyO().getPollutionMonth();
+					}
+				}
+
+			}
+			players.get(i).setPoints(gainsPts);
+			players.get(i).setPollutionMeter(gainsPol);
+		}
+	}
+
+	/*public void check(){
+		for(int i = 0; i<players.size(); i++){
+			if(players.get){
+
+			}
+		}
+	}*/
 
 }
