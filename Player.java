@@ -27,7 +27,7 @@ et une liste de la totalité des objets energetiques de ce dernier*/
 			points -= d;
 	}
 
-	public void getNumber(){
+	public int getNumber(){
 		return number;
 	}
 

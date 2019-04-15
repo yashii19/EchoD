@@ -1,7 +1,14 @@
+
 public class Test{
 	public static void main(String[] args) {
-		Map a = new Map();
-		a.afficherCarte();
-		a.countBiomes();
+		Player p = new Player("Lyna", 1);
+		Map m = new Map ();
+		Game g = new Game(p, m);
+
+		m.afficherCarte();
+
+		g.start();
+		g.gameStatus();
+		g.tourJoueur(p);
 	}
 }

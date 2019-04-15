@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 public class Game{
 /*3 constructeurs différents pour des parties à 1, 2 ou 4 joueurs. le temps en mois et en année est initialisée à 0*/
 	private ArrayList <Player> players;
@@ -37,121 +38,121 @@ public class Game{
 	public void start(){
 	/*Debut de la partie avec positionnement de base des joueurs : le positionnement varie en fonction du nombre de joueurs dans la partie*/
 		if (players.size()==1){
-			if(carte.carte[10][10] instanceof Montagne){
-				carte.carte[10][10].setBuilding(4);
-				carte.carte[10][10].setPossession(1);
+			if(carte.carte[5][5] instanceof Montagne){
+				carte.carte[5][5].setBuilding(4);
+				carte.carte[5][5].setPossession(1);
 			}
-			if(carte.carte[10][10] instanceof Littoral){
-				carte.carte[10][10].setBuilding(3);
-				carte.carte[10][10].setPossession(1);
+			if(carte.carte[5][5] instanceof Littoral){
+				carte.carte[5][5].setBuilding(3);
+				carte.carte[5][5].setPossession(1);
 			}
-			if(carte.carte[10][10] instanceof Plaine){
-				carte.carte[10][10].setBuilding(3);
-				carte.carte[10][10].setPossession(1);
+			if(carte.carte[5][5] instanceof Plaine){
+				carte.carte[5][5].setBuilding(3);
+				carte.carte[5][5].setPossession(1);
 			}
-			if(carte.carte[10][10] instanceof Desert){
-				carte.carte[10][10].setBuilding(5);
-				carte.carte[10][10].setPossession(1);
+			if(carte.carte[5][5] instanceof Desert){
+				carte.carte[5][5].setBuilding(5);
+				carte.carte[5][5].setPossession(1);
 			}
 		}
 		if (players.size()==2){
-			if(carte.carte[4][4] instanceof Montagne){
-				carte.carte[4][4].setBuilding(4);
-				carte.carte[4][4].setPossession(1);
+			if(carte.carte[2][2] instanceof Montagne){
+				carte.carte[2][2].setBuilding(4);
+				carte.carte[2][2].setPossession(1);
 			}
-			if(carte.carte[4][4] instanceof Littoral){
-				carte.carte[4][4].setBuilding(3);
-				carte.carte[4][4].setPossession(1);
+			if(carte.carte[2][2] instanceof Littoral){
+				carte.carte[2][2].setBuilding(3);
+				carte.carte[2][2].setPossession(1);
 			}
-			if(carte.carte[4][4] instanceof Plaine){
-				carte.carte[4][4].setBuilding(3);
-				carte.carte[4][4].setPossession(1);
+			if(carte.carte[2][2] instanceof Plaine){
+				carte.carte[2][2].setBuilding(3);
+				carte.carte[2][2].setPossession(1);
 			}
-			if(carte.carte[4][4] instanceof Desert){
-				carte.carte[4][4].setBuilding(5);
-				carte.carte[4][4].setPossession(1);
+			if(carte.carte[2][2] instanceof Desert){
+				carte.carte[2][2].setBuilding(5);
+				carte.carte[2][2].setPossession(1);
 			}
-			if(carte.carte[14][14] instanceof Montagne){
-				carte.carte[14][14].setBuilding(4);
-				carte.carte[14][14].setPossession(2);
+			if(carte.carte[7][7] instanceof Montagne){
+				carte.carte[7][7].setBuilding(4);
+				carte.carte[7][7].setPossession(2);
 			}
-			if(carte.carte[14][14] instanceof Littoral){
-				carte.carte[14][14].setBuilding(3);
-				carte.carte[14][14].setPossession(2);
+			if(carte.carte[7][7] instanceof Littoral){
+				carte.carte[7][7].setBuilding(3);
+				carte.carte[7][7].setPossession(2);
 			}
-			if(carte.carte[14][14] instanceof Plaine){
-				carte.carte[14][14].setBuilding(3);
-				carte.carte[14][14].setPossession(2);
+			if(carte.carte[7][7] instanceof Plaine){
+				carte.carte[7][7].setBuilding(3);
+				carte.carte[7][7].setPossession(2);
 			}
-			if(carte.carte[14][14] instanceof Desert){
-				carte.carte[14][14].setBuilding(5);
-				carte.carte[14][14].setPossession(2);
+			if(carte.carte[7][7] instanceof Desert){
+				carte.carte[7][7].setBuilding(5);
+				carte.carte[7][7].setPossession(2);
 			}
 		}
 		if(players.size()==4){
-			if(carte.carte[4][4] instanceof Montagne){
-				carte.carte[4][4].setBuilding(4);
-				carte.carte[4][4].setPossession(1);
+			if(carte.carte[2][2] instanceof Montagne){
+				carte.carte[2][2].setBuilding(4);
+				carte.carte[2][2].setPossession(1);
 			}
-			if(carte.carte[4][4] instanceof Littoral){
-				carte.carte[4][4].setBuilding(3);
-				carte.carte[4][4].setPossession(1);
+			if(carte.carte[2][2] instanceof Littoral){
+				carte.carte[2][2].setBuilding(3);
+				carte.carte[2][2].setPossession(1);
 			}
-			if(carte.carte[4][4] instanceof Plaine){
-				carte.carte[4][4].setBuilding(3);
-				carte.carte[4][4].setPossession(1);
+			if(carte.carte[2][2] instanceof Plaine){
+				carte.carte[2][2].setBuilding(3);
+				carte.carte[2][2].setPossession(1);
 			}
-			if(carte.carte[4][4] instanceof Desert){
-				carte.carte[4][4].setBuilding(5);
-				carte.carte[4][4].setPossession(1);
+			if(carte.carte[2][2] instanceof Desert){
+				carte.carte[2][2].setBuilding(5);
+				carte.carte[2][2].setPossession(1);
 			}
-			if(carte.carte[14][14] instanceof Montagne){
-				carte.carte[14][14].setBuilding(4);
-				carte.carte[14][14].setPossession(2);
+			if(carte.carte[7][7] instanceof Montagne){
+				carte.carte[7][7].setBuilding(4);
+				carte.carte[7][7].setPossession(2);
 			}
-			if(carte.carte[14][14] instanceof Littoral){
-				carte.carte[14][14].setBuilding(3);
-				carte.carte[14][14].setPossession(2);
+			if(carte.carte[7][7] instanceof Littoral){
+				carte.carte[7][7].setBuilding(3);
+				carte.carte[7][7].setPossession(2);
 			}
-			if(carte.carte[14][14] instanceof Plaine){
-				carte.carte[14][14].setBuilding(3);
-				carte.carte[14][14].setPossession(2);
+			if(carte.carte[7][7] instanceof Plaine){
+				carte.carte[7][7].setBuilding(3);
+				carte.carte[7][7].setPossession(2);
 			}
-			if(carte.carte[14][14] instanceof Desert){
-				carte.carte[14][14].setBuilding(5);
-				carte.carte[14][14].setPossession(2);
+			if(carte.carte[7][7] instanceof Desert){
+				carte.carte[7][7].setBuilding(5);
+				carte.carte[7][7].setPossession(2);
 			}
-			if(carte.carte[14][4] instanceof Montagne){
-				carte.carte[14][4].setBuilding(4);
-				carte.carte[14][4].setPossession(3);
+			if(carte.carte[7][2] instanceof Montagne){
+				carte.carte[7][2].setBuilding(4);
+				carte.carte[7][2].setPossession(3);
 			}
-			if(carte.carte[14][4] instanceof Littoral){
-				carte.carte[14][4].setBuilding(3);
-				carte.carte[14][4].setPossession(3);
+			if(carte.carte[7][2] instanceof Littoral){
+				carte.carte[7][2].setBuilding(3);
+				carte.carte[7][2].setPossession(3);
 			}
-			if(carte.carte[14][4] instanceof Plaine){
-				carte.carte[14][4].setBuilding(3);
-				carte.carte[14][4].setPossession(3);
+			if(carte.carte[7][2] instanceof Plaine){
+				carte.carte[7][2].setBuilding(3);
+				carte.carte[7][2].setPossession(3);
 			}
-			if(carte.carte[14][4] instanceof Desert){
-				carte.carte[14][4].setBuilding(5);
-				carte.carte[14][4].setPossession(3);
+			if(carte.carte[7][2] instanceof Desert){
+				carte.carte[7][2].setBuilding(5);
+				carte.carte[7][2].setPossession(3);
 			}
-			if(carte.carte[4][14] instanceof Montagne){
-				carte.carte[4][14].setBuilding(4);
-				carte.carte[4][14].setPossession(4);
+			if(carte.carte[2][7] instanceof Montagne){
+				carte.carte[2][7].setBuilding(4);
+				carte.carte[2][7].setPossession(4);
 			}
-			if(carte.carte[4][14] instanceof Littoral){
-				carte.carte[4][14].setBuilding(3);
-				carte.carte[4][14].setPossession(4);
+			if(carte.carte[2][7] instanceof Littoral){
+				carte.carte[2][7].setBuilding(3);
+				carte.carte[2][7].setPossession(4);
 			}
-			if(carte.carte[4][14] instanceof Plaine){
-				carte.carte[4][14].setBuilding(3);
-				carte.carte[4][14].setPossession(4);
+			if(carte.carte[2][7] instanceof Plaine){
+				carte.carte[2][7].setBuilding(3);
+				carte.carte[2][7].setPossession(4);
 			}
-			if(carte.carte[4][14] instanceof Desert){
-				carte.carte[4][14].setBuilding(5);
-				carte.carte[4][14].setPossession(4);
+			if(carte.carte[2][7] instanceof Desert){
+				carte.carte[2][7].setBuilding(5);
+				carte.carte[2][7].setPossession(4);
 			}
 		}
 	}
@@ -165,8 +166,8 @@ public class Game{
 	elle est détruite avec toutes les consequences que cela implique (augmentation du niveau de pollution dans ceratints cas)*/ 
 		if((int)(Math.random()*101)< 101){
 			System.out.println("Un seisme a lieu!");
-			int b = (int)(Math.random()*20);
-			int c = (int)(Math.random()*20);
+			int b = (int)(Math.random()*10);
+			int c = (int)(Math.random()*10);
 			if(carte.carte[b][c].building != null){
 				System.out.println("Le joueur "+carte.carte[b][c].possession+" a été touché! ("+players.get(carte.carte[b][c].possession-1).getPseudo()+")");
 				System.out.println("La zone affectée est "+carte.carte[b][c].toString()+"(position "+(b+1)+" "+(c+1)+")");
@@ -201,24 +202,41 @@ public class Game{
 		}
 	}
 
-	public void build(int obj, int posA, int posB, Player p){*/
+	public void build(int obj, int posA, int posB, Player p){
 		/*construit un objet sur une case choisie à condition que ce soir une case adjacente au joueur 
 		et que cette dernière n'est pas déja occupée (pas encore finie)*/
 		if(carte.carte[posA-1][posB-1].building != null){
-			System.out.println("Il y a déjà une structure sur ce terrain.");
+			System.out.println("erreur : Il y a déjà une structure sur ce terrain.");
 			return;
 		}
-		if (carte.carte[posA-2][posB-2].getPossession()==p.getNumber || )
+		if (carte.carte[posA-2][posB-1].getPossession()!=p.getNumber() || carte.carte[posA][posB-1].getPossession()!=p.getNumber() || carte.carte[posA-2][posB].getPossession()!= p.getNumber() || carte.carte[posA-2][posB-2].getPossession()!=p.getNumber()){
+			System.out.println("erreur : ce n'est pas un terrain adjacent");
+			return;
+		}
+		carte.carte[posA-1][posB-1].setBuilding(obj);
 	}
 		
 
-	/*public void tourJoueur(Player p){
-		Durant un tour, le joueur peut :
+	public void tourJoueur(Player p){
+		/*Durant un tour, le joueur peut :
 		-construire un nouvel objet energetique
-		-améliorer un objet enegétique en sa posséssion
+		-améliorer un objet energétique en sa posséssion
 		-reparer un objet energétique endommagé si cela est possible pour l'objet energetique en question
-		-passer son tour au joueur suivant
-	}*/
+		-passer son tour au joueur suivant*/
+		Scanner sc =  new Scanner(System.in);
+		System.out.println("Que voulez vous faire ?\n1 - Construire un nouvel objet energetique\n2 - Ameliorer un objet energetique\n3 - Reparer un objet energitique endommage\n4 - Passer son tour");
+		int i = sc.nextInt();
+		if (i ==1){
+			System.out.println("Que voulez vous construire ?\n1 - Mine de charbon\n2 - Centrale Geothermique\n3 - Eolienne\n4 - Barrage\n5 - Usine de petrole\n6 - Centrale nucleaire\n7 - Panneau solaire");
+			i = sc.nextInt();
+			System.out.println("Sur quel terrain voulez-vous construire ?\n position x :");
+			int x = sc.nextInt();
+			System.out.println("position y :");
+			int y = sc.nextInt();
+			this.build(i, x, y, p);
+		}
+
+	}
 
 
 
