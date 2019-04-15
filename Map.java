@@ -1,5 +1,5 @@
 public class Map{
-/*la carte du jeu est un tableau de biomes en 20*20*/
+/*la carte du jeu est un tableau de biomes en 10*10*/
 	public Biome [][] carte;
 
 	public Map(){
