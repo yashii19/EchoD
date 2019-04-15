@@ -110,4 +110,8 @@ et d'une caractéristique qui indique quelle structure est la plus efficace sur 
 		return "biome de type "+name+" en possession du joueur "+possession+ " contenant un "+ building;
 	}
 
+	public EnergyO getEnergyO(){
+		return building;
+	}
+
 }

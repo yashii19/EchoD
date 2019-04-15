@@ -5,10 +5,9 @@ public class Test{
 		Map m = new Map ();
 		Game g = new Game(p, m);
 
-		m.afficherCarte();
-
 		g.start();
 		g.gameStatus();
 		g.tourJoueur(p);
+		m.afficherCarte();
 	}
 }
