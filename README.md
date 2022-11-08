@@ -1,8 +1,9 @@
 ﻿# EchoD, un jeu sur l'environnement
  
- EcoD est un jeu développé en Java dans le cadre scolaire.
+ EcoD is a game developped with Java for a school project.
  
- ## Comment compiler
+ 
+ ## How to play
 
 javac *.java
 
